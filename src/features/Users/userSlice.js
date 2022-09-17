@@ -7,11 +7,15 @@ const userslice = createSlice({
         addPerson:(state,action)=>{
         state.val.push(action.payload)
         },
-        deletePerson:()=>{
-
+        deletePerson:(state,action)=>{
+        state.val=state.val.filter((elem)=>elem.id !== action.payload.id)
         },
-        updatePerson:()=>{
-
+        updatePerson:(state,action)=>{
+        state.val.map((elem)=>{
+            if(elem.id === action.payload.id){
+           elem.body = action.payload.body        
+            }
+        })
         },
 
 
