@@ -1,15 +1,15 @@
 import './App.css';
+import Cart from './features/cartItems/Cart';
 import Counter from './features/counter/Counter';
+import ExpenseUI from './features/expenseTracker/ExpenseUI';
 import UsersList from './features/Users/UsersList';
-import FetchApi from './services/FetchApi';
+import FetchApi from './RTKQUERY/services/FetchApi';
+
 
 function App() {
   return (
    <>
-   {/* <Counter/>
-   <hr/>
-   <UsersList/> */}
-   <FetchApi/>
+<FetchApi/>
 
    </>);
 }

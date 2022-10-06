@@ -24,8 +24,10 @@ setUserdata({...userdata,[e.target.name]:e.target.value})
               {user.id}
             <h5>{user.title}</h5>
            <p>{user.body}</p> 
-           <p>New User</p>
-           id:{user.id1}title{user.title1}{user.body1}
+           <p>New User</p> <hr />
+           id:{user.id1} <br />
+           <title>user.title1</title>
+           <br /> {user.body1} <br />
            <button onClick={()=>{dispatch(deletePerson({id:user.id}))}}>Delete</button>  
            <button onClick={()=>dispatch({id:user.id,body:body1})}>Update</button>
         </div>)
